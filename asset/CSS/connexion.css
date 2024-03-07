@@ -1,0 +1,287 @@
+/* /* *::before,
+*::after */
+* {
+    box-sizing: border-box;
+    font-family: system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+.containerind {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    background: linear-gradient(rgba(88, 87, 87, 0.245), transparent), url('../../image/imgActivite/IN.jpg') center center no-repeat;
+    background-size: cover;
+
+}
+
+
+.sec-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+nav .logo {
+    width: 250px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: center;
+    /* padding-right: 40px; */
+    text-align: right;
+    list-style-type: none;
+}
+
+/* ul li {
+    margin-right: 10px;
+} */
+
+/* ul li a {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+} */
+
+button.btnn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    margin-top: 0;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 0.5rem;
+    background-color: #f86706;
+    margin-top: 1rem;
+
+}
+
+button.btnn:hover {
+    background-color: #f88132;
+    color: white;
+}
+
+.hello {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 70px;
+    font-family: "perso";
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.hello span {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-family: "perso";
+}
+
+.hello {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    75% {
+        font-size: 100%;
+        margin-left: 10%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* centrer le formulaire */
+
+.formWrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+
+
+.formWrapper .cardind {
+    width: 400px;
+    height: 55vh;
+    padding: 20px;
+    background-color: rgba(9, 9, 9, 0.167);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    border-radius: 0.5rem;
+    /* box-shadow: 2px 3px 8px #fff; */
+}
+
+.cardind.show {
+    visibility: visible;
+    opacity: 1;
+
+
+}
+
+.card-header {
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 1.1rem;
+    color: #f6f6f6;
+    /* box-shadow: 2px 3px 8px #fff; */
+}
+
+.card-header .form-header {
+    border-radius: 50px;
+    flex: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    user-select: none;
+
+}
+
+.card-header .form-header:hover {
+    cursor: pointer;
+    /* background-color:#fff2eaf8 transparent;
+    color:white; */
+}
+
+.card-header .form-header.active {
+    border-color: #f6f5f4;
+    /* box-shadow: inset 1px 1px 2px rgb(245, 149, 59), inset -1px 1px 2px rgb(245, 149, 59) inset -1px -1px 2px rgb(245, 149, 59),
+        inset 1px -1px 2px rgb(245, 149, 59); */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 3px 8px #fff;
+}
+
+.card-bod {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
+}
+
+form {
+    flex: 0 0 100%;
+}
+
+#forLogin {
+    border-radius: 30px;
+}
+
+
+.form-control {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solidrgb(245, 149, 59);
+    background: none;
+    outline: none;
+    /* padding: 10px 5px; */
+    margin-bottom: 30px;
+    color: #140606;
+
+}
+
+label {
+    display: in;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    color: #f86706;
+    text-align: left;
+}
+
+/* .remb{
+    width: 100%;
+    height: 15%;
+    display: flex;
+
+} */
+.form-control::placeholder {
+    color: #f86706;
+}
+
+.formButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    margin-top: 0;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 0.5rem;
+    background-color: #f86706;
+    /* margin-top: 1rem; */
+    width: 15rem;
+
+
+}
+
+.formButton:hover {
+    /* box-shadow: 3px 5px 15px #ed5909;
+    transform: translateY(-5px); */
+    color: white;
+    border: #f86706 solid 1px;
+    background-color: #f88132;
+
+}
+
+.toggleForm {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+/* style modif  kady chantal*/
+
+/* style logo noir */
+.logonoir {
+    width: 200px;
+    margin-bottom: 4rem;
+}
+
+.titreLog {
+    text-align: center;
+    margin-bottom: 2rem;
+}

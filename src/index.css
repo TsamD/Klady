@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+h1{
+  font-size:10rem;
+}
+
+h1:hover{
+  font-size: 2rem;
+}
+
+.github-icon {
+  z-index: 0;  /* ou tout autre valeur appropriée */
+}
+

@@ -1,0 +1,7 @@
+AuthName "kady statistics"
+AuthType Basic
+AuthUserFile /home/kady/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+Require all denied
+</Files>

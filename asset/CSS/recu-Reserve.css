@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+.main{
+    background-color: rgba(165, 163, 162, 0.431);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fiche{
+        background-color: rgba(235, 235, 235, 0.805);
+        width:30%;
+        height: 80%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+}
+table{
+    width: 90%;
+    height: 70vh;
+    padding: 5px;
+}
+tr  , td {
+    padding: 5px;
+    text-align: left;
+    font-size: 19px;
+}
+h1{
+    margin-bottom: 10px;
+    padding-left: 40px;
+    color: rgb(137, 37, 0);
+
+}
+.info{
+    color: blue;
+    padding-left: 2px;
+}
+.retour{
+    left: 10px;
+    top: 20px;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+    left: 10px;
+    top: 20px;
+    font-size: 2rem;
+}
+button{
+    width: 180px;
+    height: 50px;
+    
+    background-color: orangered;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 19px;
+
+}
+p{
+    color: brown;
+    font-size: 20px;
+}
+img{
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+
+fieldset{
+    margin-top: 10px;
+}
